@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="´t-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini calculadora</title>
+    <style>
+        body {
+            background-color: #ccc;
+            margin-top: 60px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+            width: 500px;
+            height: 300px;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+
+        label {
+            background-color: black;
+            color: #fff;
+        }
+
+        button:hover {
+            color: #f8eaea;
+            background-color: rgba(30, 26, 30, 0.932);
+            transition: 2.5ms;
+        }
+
+        p {
+            margin: 5px auto;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <label for="num1">Primeiro numero:</label>
+        <input type="number" id="num1">
+        <label for="num2">Segundo numero:</label>
+        <input type="number" id="num2">
+        <button id="somar">Somar</button>
+        <button id="resetar">Apagar</button>
+        <p id="resultado">Resultado: </p>
+    </div>
+
+    <script>
+        // Criação da variável de calculo
+        const exibir = document.getElementById('resultado');
+
+        // Criação de botão de somar
+        document.getElementById('somar').addEventListener('click', function () {
+            const num1 = Number(document.getElementById('num1').value);
+            const num2 = Number(document.getElementById('num2').value);
+
+            let resultado = num1 + num2 // Primeira modificação
+
+            // Mostrando o resultado na tela.
+            exibir.textContent = 'Resultado: ' + resultado;
+        })
+
+        // Criação do botão de apagar
+        document.getElementById('resetar').addEventListener('click', function () {
+            let apagar = 0
+
+            exibir.textContent = 'Resultado: ' + apagar;
+        })
+    </script>
+</body>
+
+</html>

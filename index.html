@@ -1,0 +1,105 @@
+g
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplos com dom</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 60px;
+            background-color: #ccc;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            border-radius: 10px;
+            background-color: #fff;
+            width: 600px;
+            height: 300px;
+            margin: auto;
+            padding: 40px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        #contador {
+            font-size: 60px;
+            margin: 20px;
+        }
+
+        #botao {
+            margin-top: 20px;
+            font-size: 24px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+            background-color: #ece7e7;
+        }
+
+        #apagar {
+            margin-top: 20px;
+            margin-left: 40px;
+            font-size: 24px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+            background-color: #8ad4f7;
+
+        }
+
+        #apagar:hover {
+            color: #fff;
+            background-color: #02a9f6;
+        }
+
+        button:hover {
+            color: #fff;
+            background-color: rgb(29, 29, 31);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1> Contador de cliques</h1>
+        <div id="contador">0</div>
+        <button id="botao">Clique aqui</button>
+        <button id="apagar">Resetar</button>
+    </div>
+
+
+    <Script>
+        let contagem = 0 // Inicio de partida
+
+
+        // Criação de um contador 
+        const contador = document.getElementById('contador'); // Seleciona o número 
+        const botao = document.getElementById('botao'); // Seleciona o botão 
+        const botaoResetar = document.getElementById('apagar');
+
+
+        // Adicionando um evento ao botao 
+        botao.addEventListener('click', function () {
+            contagem++; // acrescentando número.
+            contador.textContent = contagem; // atualiza o número na tela
+        })
+
+        // Botão de resetar
+        botaoResetar.addEventListener('click', function () {
+            contagem = 0;
+            contador.textContent = contagem;
+
+        })
+    </Script>
+</body>
+
+</html>
