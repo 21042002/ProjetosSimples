@@ -1,0 +1,122 @@
+body {
+    margin: auto;
+    background-color: #0e0e0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #505050;
+    width: 300px;
+    border: 2px solid purple;
+    height: 60vh;
+    width: 80vh;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+
+input {
+    width: 65vh;
+    padding: 10px;
+    margin-top: 13px;
+    margin-left: 3em;
+    border: 3px solid;
+    background-color: #8b8a8a;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+input:focus {
+    outline: none;
+    background-color: #8b8a8a;
+}
+
+input::placeholder {
+    color: #1f1f1f;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
+
+input:hover {
+    border: 3px solid purple;
+    cursor: pointer;
+
+}
+
+/*Editar os button */
+
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+button {
+    width: 14vh;
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid;
+    margin-right: 15px;
+    font-size: 19px;
+}
+
+#adicionarBtn {
+    background-color:#1d18186c;    
+}
+
+#btnConcluido {
+    background-color: rgb(11, 155, 43);
+}
+
+#btnRemover {
+    background-color: #880404;
+}
+
+button:hover {
+    border: 3px solid #fff;
+    background-color: black;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+ul {
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 22px;
+    align-items: center;
+    padding: 5px;
+    margin-top: 10px;
+    max-width: 60vh;
+    overflow-y: auto;
+
+}
+
+
+li {
+    color: #fff;
+}
+.completed {
+    text-decoration: line-through;
+    color: #fff;
+    font-size: 22px;   
+}
