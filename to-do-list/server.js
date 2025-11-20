@@ -70,6 +70,7 @@ const server = http.createServer( (req, res) => {
             sendJSON(res, 200, {message: "Tarefa removida" })
         })
         return
+    
     }
 
     // PATCH /tarefa/:id - Atualizar concluída
